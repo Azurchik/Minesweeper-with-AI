@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Options</class>
+ <widget class="QDialog" name="Options">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>323</width>
+    <height>306</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>323</width>
+    <height>306</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>323</width>
+    <height>306</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Налаштування</string>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="statusTip">
+   <string/>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>305</width>
+     <height>147</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Рівень складності:</string>
+   </property>
+   <widget class="QRadioButton" name="radioBgn">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>29</y>
+      <width>88</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Початківець 
+9х9 10</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioIntm">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>67</y>
+      <width>71</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Середній
+16х16 40</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioAdvc">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>105</y>
+      <width>93</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Продвинутий
+16х30 99</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioCustom">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>71</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Створити</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>166</x>
+      <y>60</y>
+      <width>136</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelWidth">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Ширина (9-24):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineWidth">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>51</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhPreferNumbers</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelHeight">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Висота (9-39):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineHeight">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>51</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhPreferNumbers</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="labelMines">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Міни (9-500):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineMines">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>51</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhPreferNumbers</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>222</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QCheckBox" name="checkSaved">
+      <property name="text">
+       <string>Завжди зберігати Гру при виході</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkContinue">
+      <property name="text">
+       <string>Завжди продовжувати збережену гру</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkTime">
+      <property name="text">
+       <string>Сховати секундомір</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>270</y>
+     <width>311</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>137</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>Зберегти</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>Вийти</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Options</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>279</x>
+     <y>274</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>290</x>
+     <y>251</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

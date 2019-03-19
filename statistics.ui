@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Statistics</class>
+ <widget class="QDialog" name="Statistics">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>186</width>
+    <height>288</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Статистика</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QComboBox" name="boxDifficulty">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>22</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>Початківець</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Середній</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Продвинутий</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="labelBestTime">
+       <property name="text">
+        <string>Найращий час: </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="insertBestTime">
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="insertDate">
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>19</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="labelPlayed">
+         <property name="text">
+          <string>Ігр зіграно: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="insertPlayed">
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="labelWon">
+         <property name="text">
+          <string>Ігр виграно: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="insertWon">
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QLabel" name="labelPercentage">
+         <property name="text">
+          <string>Відсоток: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="insertPercentage">
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="labelWinStreak">
+         <property name="text">
+          <string>Найдовша виграшна смуга: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="insertWinStreak">
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="labelLoseStreak">
+         <property name="text">
+          <string>Найдовша програшна смуга: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="insertLoseStreak">
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="labelCurStreak">
+         <property name="text">
+          <string>Поточна смуга: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="insertCurStreak">
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="5" column="0">
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>2</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="6" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <item>
+      <widget class="QPushButton" name="buttonClose">
+       <property name="text">
+        <string>Закрити</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonReset">
+       <property name="text">
+        <string>Скинути</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

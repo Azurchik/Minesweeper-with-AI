@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/classic">
+        <file>images/0.png</file>
+        <file>images/1.png</file>
+        <file>images/-1.png</file>
+        <file>images/2.png</file>
+        <file>images/3.png</file>
+        <file>images/4.png</file>
+        <file>images/5.png</file>
+        <file>images/6.png</file>
+        <file>images/7.png</file>
+        <file>images/8.png</file>
+        <file>images/9.png</file>
+        <file>images/10.png</file>
+        <file>images/triggeredMines.png</file>
+        <file>images/uncheckedMines.png</file>
+        <file>images/wrongMines.png</file>
+        <file>images/mines.png</file>
+        <file>images/time.png</file>
+    </qresource>
+</RCC>

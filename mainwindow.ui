@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>244</width>
+    <height>225</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>1</width>
+    <height>1</height>
+   </size>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Minesweeper</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="lcdLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinimumSize</enum>
+      </property>
+      <item>
+       <widget class="QLabel" name="labelMines">
+        <property name="text">
+         <string>Mines</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdMines">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>64</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="digitCount">
+         <number>3</number>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdTime">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="digitCount">
+         <number>3</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelTime">
+        <property name="text">
+         <string>time</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>244</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Гра</string>
+    </property>
+    <addaction name="actionNewGame"/>
+    <addaction name="separator"/>
+    <addaction name="actionStatistics"/>
+    <addaction name="actionOptions"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuBot">
+    <property name="title">
+     <string>Бот</string>
+    </property>
+    <addaction name="actionStartBot"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuBot"/>
+  </widget>
+  <action name="actionNewGame">
+   <property name="text">
+    <string>Нова гра</string>
+   </property>
+  </action>
+  <action name="actionOptions">
+   <property name="text">
+    <string>Налаштування</string>
+   </property>
+  </action>
+  <action name="actionStatistics">
+   <property name="text">
+    <string>Статистика</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Вихід</string>
+   </property>
+  </action>
+  <action name="actionStartBot">
+   <property name="text">
+    <string>Запуск Бота</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
